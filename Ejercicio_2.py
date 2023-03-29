@@ -1,19 +1,27 @@
-def solve(operation):
-    terms = operation.split("+")
-    operands = []
-    for term in terms:
-        factors = term.split("*")
-        operands.append(factors)
-
-    num_operands = len(operands)
-    products = [1] * num_operands
-    for i in range(num_operands):
-        for factor in operands[i]:
-            products[i] *= int(factor)
-
-    return sum(products)
+chain = input("Ingresa tu expresion: ")
 
 
-operacion = input("Ingresa la operacion a resolver: ")
-resultado = solve(operacion)
-print(f"El resultado de la operación '{operacion}' es: {resultado}")
+def solve(chain):
+    list_mult = []
+    spl_1 = chain.split("+")
+    for i in spl_1:
+        spl_2 = i.split("*")
+        list_mult.append(spl_2)
+    num_sum = 0
+    result = 0
+    num_mult = 0
+    for terms in list_mult:
+        result += num_mult
+        num_mult = 1
+        for mult in terms:
+            if len(terms) != 1:
+                num_mult *= int(mult)
+            elif len(terms) == 1:
+                num_sum += int(mult)
+                result += num_sum
+                num_mult = 0
+    result += num_mult
+    print("El resultado es: ", int(result))
+
+
+solve(chain)
