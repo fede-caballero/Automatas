@@ -19,10 +19,10 @@ def solve(expr):
     #Recorro la lista de los elementos que se estan multiplicando y separo por el simbolo "*"
     for mult in mult_raw:
         sep_mult = mult.split("*")
-        num1 = int(sep_mult[0])
-        num2 = int(sep_mult[1])
-        
-        result = num1 * num2
+        result = 1
+        for number in sep_mult:
+            result = result * int(number)
+            
     #Agrego a la lista los resultados de las multiplicaciones que estan en la expresion
         mult_pre_results.append(result)
         
