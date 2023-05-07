@@ -1,0 +1,30 @@
+Autómatas finitos. Los autómatas finitos utilizan estados y transiciones entre estados en respuesta a las entradas. Resultan útiles para construir diversos tipos de software, incluyendo el componente de análisis léxico de un compilador y los sistemas que permiten verificar la corrección de, por ejemplo, circuitos o protocolos.
+
+Expresiones regulares. Definen una notación estructural que permite describir los mismos patrones que se pueden representar mediante los autómatas finitos. Se emplean en muchos tipos comunes de software, incluyendo herramientas para la búsqueda de patrones, por ejemplo, en textos o en nombres de archivo.
+
+Gramáticas independientes del contexto. Definen una importante notación para describir la estructura de los lenguajes de programación y de los conjuntos relacionados de cadenas de caracteres; resultan útiles en la construcción del analizador sintáctico de un compilador.
+
+Máquinas de Turing. Son autómatas que modelan la potencia de las computadoras reales. Nos permiten estudiar la decidibilidad, es decir, el problema de qué puede o no puede hacer una computadora. También nos permiten distinguir los problemas tratables (aquellos que pueden resolverse en un tiempo polinómico) de los problemas intratables (los que no se pueden resolver en un tiempo polinómico).
+
+Demostraciones deductivas. Este método básico de demostración se basa en la construcción de listas de proposiciones que o bien son verdaderas o bien se deducen lógicamente de proposiciones anteriores.
+
+Demostración de proposiciones Si-entonces. Muchos teoremas son de la forma “si (algo) entonces (alguna otra cosa)”. La proposición o proposiciones que siguen a la parte “si” son las hipótesis y las que siguen a la parte “entonces” es la conclusión. Las demostraciones deductivas de las proposiciones si-entonces comienzan con la hipótesis y continúan con proposiciones que se deducen lógicamente a partir de la hipótesis y de las proposiciones anteriores hasta que se demuestra la conclusión como una proposición
+más.
+
+Demostración de proposiciones Si-y-sólo-si. Existen otros teoremas de la forma “(algo) si y sólo si (alguna otra cosa)”. Se demuestran probando las proposiciones si-entonces en ambos sentidos. Un tipo similar de teorema establece la igualdad de los conjuntos descritos de dos formas diferentes; se demuestran probando que cada uno de los dos conjuntos está contenido en el otro.
+
+Demostración de la conversión contradictoria. En ocasiones, es más fácil demostrar una proposición de la forma “si H entoncesC” demostrando la proposición equivalente: “si noC entonces no H”. Esta última se conoce como conversión contradictoria de la primera.
+
+Demostración por reducción al absurdo. En otros casos, es más conveniente demostrar la proposición “si H entonces C” demostrando “si H y no C entonces (algo que sabemos que es falso)”. Una demostración de este tipo se denomina demostración por reducción al absurdo.
+
+Contraejemplos. Algunas veces nos pedirán que demostremos que una determinada proposición no es verdadera. Si la proposición tiene uno o más parámetros, entonces podemos demostrar que es falsa proporcionando un único contraejemplo, es decir, una asignación de valores a los parámetros que hace que la proposición sea falsa.
+Demostraciones inductivas. Una proposición que tiene un parámetro entero n amenudo puededemostrarse por inducción sobre n. Se demuestra que la proposición es verdadera para el caso base, un número finito de casos para valores concretos de n, y luego se demuestra el paso de inducción: si la proposición es verdadera para todos los valores hasta n, entonces es verdadera para n+1.
+
+Inducciones estructurales. En algunas situaciones, incluyendo muchas de las de este libro, el teorema que se va a demostrar inductivamente es acerca de algo definido de forma recursiva, como en el caso de los árboles. Podemos demostrar un teorema acerca de objetos construidos por indución sobre el número de pasos utilizados en su construcción. Este tipo de inducción se conoce como estructural.
+
+Alfabetos. Un alfabeto es cualquier conjunto finito de símbolos.
+
+Cadenas de caracteres. Una cadena es una secuencia de símbolos de longitud finita.
+
+Lenguajes y problemas. Un lenguaje es un conjunto (posiblemente infinito) de cadenas, donde los símbolos símbolo de todas ellas se han seleccionado de un determinado alfabeto. Cuando las cadenas de un lenguaje se interpretan de alguna manera, la cuestión de si una cadena pertenece o no al lenguaje se dice, en ocasiones, que es un problema.
+
