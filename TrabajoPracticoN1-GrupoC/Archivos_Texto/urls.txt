@@ -1,0 +1,17 @@
+http://www.example.com/
+https://example.com
+http://example.com/path/to/resource?param1=value1&param2=value2
+http://www.example.com/
+https://example.com/
+http://www.example.com/?param1=value1&param2=value2
+http://www.example.com/path/to/resource/
+http://example.com/path/to/resource?param1=value1&param2=value2&param3=value3
+https://www.example.com?
+https://www.example.com/?param1=value1&param2=value2
+https://www.example.com/path/to/resource?
+https://www.example.com/path/to/resource/?param1=value1&param2=value2
+example.com.ar
+www.example---.com.edu
+www.example.com.pe
+-example.com.ar
+...example.com.ar
