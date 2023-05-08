@@ -1,4 +1,3 @@
-import os
 import re
 
 
@@ -25,7 +24,7 @@ correos = example_text.read_txt_lines()
 
 
 def analizer(mails):
-    if re.fullmatch("[A-Za-z][A-Za-z0-9._-]+@[A-Za-z]+\.(com|net)+(\.[A-Za-z]{2})?", mails):
+    if re.fullmatch("[A-Za-z][A-Za-z0-9._-]+[A-Za-z0-9]@[A-Za-z]+\.(com|net)+(\.[A-Za-z]{2})?", mails):
         print(f'La cadena {correos[count]} contiene el patron')
 
     else:
@@ -36,3 +35,4 @@ count = 0
 for i in correos:
     analizer(correos[count])
     count += 1
+
