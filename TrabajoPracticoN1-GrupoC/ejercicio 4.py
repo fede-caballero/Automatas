@@ -5,13 +5,12 @@ def analyze_text(file_path):
         text = f.read()
 
     text_without_punctuation = re.sub(r"[^\w\s]", "", text)
-    unique_words = []
+    unique_words = set()
     words = text_without_punctuation.lower().split()
     total_words = len(words)
 
     for word in words:
-        if word not in unique_words:
-            unique_words.append(word)
+        unique_words.add(word)
 
     max_count = 0
     most_common_word = ""
